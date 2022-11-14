@@ -1,0 +1,17 @@
+{
+    "manifest_version":3,
+    "name":"Rufus Hide Twitch Porkixonas",
+    "description":"Extenssão para quem está farto das porkixonas na aba de recomendações da Twitch \n Versão Beta apenas esconde aba menu",
+    "version":"0.1",
+    "icons":{
+        "16":"/images/icon_sub_16.png",
+        "48":"/images/icon_sub_48.png",
+        "128":"/images/icon_sub_128.png"
+    },
+    "content_scripts":[{
+        "matches": ["https://www.twitch.tv/*"],
+        "css":["main.css"],
+        "js":["index.js"]
+    }]
+
+}
